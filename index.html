@@ -657,19 +657,20 @@
                     toggleActions: "play none none reverse",
                 }
             })
-            t1.fromTo(".face", {
-                    opacity: "0",
-                    display: "none",
+            t1.fromTo(".cell", {
+                    width: "45%",
+                    height: "3vh",
+                    fontSize: "initial",
                 }, {
-                    opacity: "1",
-                    display: "block",
-                    duration: 0.5,
-                }, "<")
-                .to(".cell", {
                     width: "28%",
                     height: "3vh",
                     duration: 0.5,
                     fontSize: "xx-small",
+                }, "<")
+                .to(".face", {
+                    opacity: "1",
+                    display: "block",
+                    duration: 0.5,
                 }, "<").to(".lens", {
                     marginLeft: "3.5vw",
                     duration: 0.5,
