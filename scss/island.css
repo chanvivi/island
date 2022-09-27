@@ -68,25 +68,6 @@
     width: 9vw;
     height: 9vw;
     position: absolute;
-    transform: translateX(25vw);
-    -webkit-animation: move 0.8s ease-in-out 0s 1;
-            animation: move 0.8s ease-in-out 0s 1;
-  }
-  @-webkit-keyframes move {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(25vw);
-    }
-  }
-  @keyframes move {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(25vw);
-    }
   }
   .tool_div .range .face a {
     display: flex;
@@ -101,6 +82,14 @@
     transform: translateX(25vw);
     -webkit-animation: move 0.8s ease-in-out 0s 1;
             animation: move 0.8s ease-in-out 0s 1;
+  }
+  @-webkit-keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(25vw);
+    }
   }
   @keyframes move {
     0% {
