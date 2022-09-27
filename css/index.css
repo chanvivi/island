@@ -778,8 +778,7 @@ nav ul li a:hover::after {
 
     .home .ad {
         flex-direction: column;
-        margin-top: 4vw;
-        padding: 5vw;
+        padding: 9vw;
     }
 
     /* 文字  東佳興建設*/
