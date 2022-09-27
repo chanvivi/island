@@ -597,14 +597,11 @@
                     toggleActions: "play none none reverse",
                 }
             })
-            t1.fromTo(".face", {
-                opacity: "1",
-                display: "block",
+            t1.fromTo(".cell", {
+                width: "45%",
+                height: "3vh",
+                fontSize: "initial",
             }, {
-                opacity: "0",
-                display: "none",
-                duration: 0.5,
-            }, "<").to(".cell", {
                 width: "45%",
                 height: "3vh",
                 fontSize: "initial",
@@ -614,6 +611,10 @@
                 display: "none",
                 duration: 0.5,
             }, "<").to(".call", {
+                opacity: "0",
+                display: "none",
+                duration: 0.5,
+            }, "<").to(".face", {
                 opacity: "0",
                 display: "none",
                 duration: 0.5,
