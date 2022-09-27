@@ -90,6 +90,9 @@ nav ul li a:hover::after {
 .home{
     background-color: #00A2B9;
 }
+.home input{
+    opacity: 0;
+}
 .home .ad {
     background: url(../img/BG_ph.jpg) no-repeat center;
     background-repeat: no-repeat;
