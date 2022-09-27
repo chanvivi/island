@@ -1,0 +1,1082 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* logo */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 5px 20px rgb(0 0 0 / 20%);
+    background-color: #00A2B9;
+    z-index: 80;
+    width: 100vw;
+}
+
+#logo {
+    float: left;
+    font-size: 3em;
+    margin: 0;
+    /* padding: .3em; */
+    text-decoration: none;
+    color: #333;
+    transition: .5s all;
+    display: flex;
+}
+
+#logo img {
+    width: 10vw;
+}
+
+#logo:hover {
+    background-color: rgba(255, 255, 255, 0.158);
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5em 1em;
+}
+
+nav ul li {
+    display: inline;
+    padding: 18px 6px;
+    letter-spacing: 2px;
+    margin: 0 1vw;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.0em;
+    padding-bottom: 0.5em;
+    transition: 0.3s;
+    border-bottom: 0px;
+    position: relative;
+    text-align: center;
+}
+
+nav ul li a::after {
+    content: "";
+    /* 改變長度 */
+    position: absolute;
+    border-bottom: 2px solid #ffffff;
+    transition: 0.3s;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+}
+
+nav ul li a:hover::after {
+    right: 0%;
+    left: 0%;
+}
+
+/* 桌機板 */
+.home .ad {
+    background: url(../img/BG_ph.jpg) no-repeat center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.home .ad {
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 6vw;
+}
+
+/* 文字  東佳興建設 */
+.home .ad .title_txt_box {
+    width: 5vw;
+    padding: 1vw 0vw 0vw 8vw;
+}
+
+/* 小鳥圖 */
+.home .ad .img_box {
+    width: 30vw;
+    transform: rotateY(180deg);
+    padding: 0vw 15vw;
+    padding-bottom: 5vw;
+    padding-right: 0px;
+}
+
+.home .ad .img_box img {
+    width: 100%;
+}
+
+/* 文字圖 */
+.home .ad .txt_box:first-child {
+    width: 20vw;
+    padding-left: 7vw;
+}
+
+.home .ad .txt_box {
+    margin: auto;
+    display: block;
+    width: 35vw;
+}
+
+.home .ad .txt_box img {
+    width: 100%;
+}
+
+/* 右邊icon */
+.home .life_icon {
+    position: fixed;
+    right: 1vw;
+    top: 150px;
+    z-index: 80;
+    width: 50px;
+}
+
+.home .life_icon a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 7px;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+    padding: 1px;
+    border-radius: 12px;
+}
+
+.home .life_icon a:nth-child(even) {
+    background-color: #00a2b9;
+}
+
+.home .life_icon a:nth-child(odd) {
+    background-color: #007bff;
+}
+
+.home .life_icon a p {
+    color: rgb(255 255 255 / 80%);
+    letter-spacing: 1vw;
+    font-size: 20px;
+    text-align: center;
+    margin: 1vw;
+}
+/* 新光田特區 */
+.home .map{
+    margin: auto;
+    width: 1200px;
+    width: 100%;
+    background: url(../img/img2022032810041543.webp) no-repeat center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.home .map .item{
+    display: flex;
+}
+.home .item .txt_box{
+    margin:3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .item .txt_box .e_img{
+    width: 13vw;
+}
+.home .item .txt_box h2{
+    font-size: 1.8vw;
+    letter-spacing: 0.1vw;
+    line-height: 1.3;
+    margin: 1.5vw 0;
+}
+.home .item .txt_box p{
+    margin: 2vw 0 4vw 0;
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 0;
+}
+.home .item .txt_box .card{
+    display: flex;
+    justify-content: center;
+}
+.home .item .txt_box .card .item_box{
+    width:11vw;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 1vw;
+}
+.home .item .txt_box .card .item_box .m_txt_box{
+    background-color: #888888;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 19.5px;
+    letter-spacing: 2px;
+    height: 10vh;
+    justify-content: center;
+}
+.home .item .txt_box .card .item_box .m_txt_box p{
+    margin: 0;
+    padding: 0.3vw;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+
+
+
+/* 360區全區環繞 */
+.home .view {
+    margin: auto;
+    width: 1200px;
+    width: 100%;
+    background: url(../img/img2022032810041543.webp) no-repeat center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .view .box {
+    display: flex;
+}
+
+.home .view .box .img_box {
+    width: 45vw;
+    padding: 5vw;
+}
+
+.home .view .box .txt_box {
+    width: 45vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    position: relative;
+}
+
+/* 小鳥 */
+.home .view .box .txt_box .img_box {
+    content: "";
+    position: absolute;
+    top: 10vw;
+    right: 4vw;
+    padding: 0;
+    width: 10vw;
+}
+
+.home .view .box .txt_box .img_box img {
+    width: 10vw;
+    padding: 0;
+}
+
+.home .view .box .txt_box img {
+    width: 17vw;
+    padding-bottom: 10px;
+}
+
+.home .view .box .txt_box h2 {
+    line-height: 2em;
+}
+
+.home .view .box .txt_box p {
+    line-height: 2em;
+}
+
+/* 藍線 */
+.home .line {
+    flex: 1 1 100%;
+    border-top: 5px solid #00A1B9;
+    margin: 0;
+    margin-top: 2vw;
+}
+
+.home .ktv {
+    margin: auto;
+    width: 1200px;
+    width: 100%;
+    background: url(../img/img2022032810041543.webp) no-repeat center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .ktv .box {
+    display: flex;
+}
+
+.home .ktv .box .img_box {
+    width: 65vw;
+}
+
+.home .ktv .box .txt_box {
+    width: 45vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    position: relative;
+}
+
+.home .ktv .box .txt_box .img_box {
+    content: "";
+    position: absolute;
+    top: 10vw;
+    right: 4vw;
+    padding: 0;
+    width: 10vw;
+}
+
+.home .ktv .box .txt_box .img_box img {
+    width: 10vw;
+    padding: 0;
+}
+
+.home .ktv .box .txt_box img {
+    width: 17vw;
+    padding-bottom: 10px;
+}
+
+.home .ktv .box .txt_box h2 {
+    line-height: 2em;
+}
+
+.home .ktv .box .txt_box p {
+    line-height: 2em;
+}
+
+.home .bule {
+    background: url(../img/BG_ph.jpg) no-repeat center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .bule .txt_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4vw;
+}
+
+.home .bule .txt_box .logo {
+    width: 30vw;
+}
+
+.home .bule .txt_box h2 {
+    color: #ffffff;
+    line-height: 1.8;
+    letter-spacing: 0.2vw;
+}
+
+.home .bule .txt_box h3 {
+    color: #ffffff;
+    line-height: 1.8;
+    margin: 2vw 0 4vw 0;
+    letter-spacing: 0.2vw;
+}
+
+.home .bule .txt_box h4 {
+    color: #ffffff;
+    font-size: 1.1em;
+    border-radius: 20px;
+    padding: 0.8vw 2vw;
+    border: 1px solid;
+    width: 14vw;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+/* 九宮格 */
+.home .life_box {
+    margin: 0 auto;
+    width: 60%;
+    width: 1200px;
+    width: 100%;
+    background: url(../img/img2022032810041543.webp) no-repeat center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .life_box .jiugo {
+    padding: 30px;
+}
+
+.home .life_box a {
+    background-color: #00a2b9;
+    display: block;
+    width: 15vw;
+    border-radius: 20px;
+    margin: auto;
+    cursor: pointer;
+    margin: 2vw;
+}
+
+.home .life_box a:nth-child(odd) {
+    background-color: #2fc0cf;
+}
+
+.home .life_box .jiugo .box {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .life_box .jiugo .box .img_box {
+    width: 4vw;
+    padding: 3vw;
+    padding-bottom: 0.5vw;
+    margin: 0 auto;
+}
+
+.home .life_box .jiugo .box .img_box img {
+    transition: all 0.3s;
+}
+
+.home .life_box .jiugo .box .img_box img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.home .life_box .jiugo .box .txt_box {
+    padding: 3vw;
+    padding-top: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/* 地圖 */
+/* iframe可以修改的有限要在css修改 */
+.home .google iframe {
+    height: 70vh;
+}
+
+.home .google .btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home .google button p {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.home .google button {
+    padding: 0px 100px;
+    background-color: #c1291f;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.home .google button img {
+    width: 3vw;
+}
+
+/* 預約鑑賞 */
+.home .reserve {
+    background-color: #00A2B9;
+    padding-top: 5vw;
+
+}
+
+.home .reserve .re_form {
+    margin: 0 auto;
+    padding: 5vw 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 填寫區  */
+.home .reserve .re_form .txt {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.home .reserve .re_form .txt p {
+    color: #ffffff;
+    width: 45vws;
+    margin: 0.5vw;
+    font-size: 18px;
+    letter-spacing: 1.366px;
+}
+
+.home .reserve .re_form .txt input {
+    padding: 8px 15px;
+    border: none;
+    width: 45vw;
+    border-radius: 8px;
+}
+
+.home .reserve .re_form .txt textarea {
+    width: 47vw;
+    height: 180px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+.home .reserve .re_form .title .txt_box h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.home .reserve .re_form .title .img_box {
+    height: 150px;
+    width: 80%;
+    transform: rotateY(180deg);
+    right: -37%;
+    top: 11%;
+}
+
+/* 小鳥圖 */
+.home .reserve .re_form .title .img_box .bird {
+    animation: birdSwing 1s infinite ease-in-out alternate-reverse;
+}
+
+/* 小鳥2 */
+.home .reserve .re_form .title .img_box .box_2 {
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+    width: 5%;
+    animation: birdFlyAni_2 3s infinite linear 1s;
+    opacity: 0;
+}
+
+/* 小鳥3 */
+.home .reserve .re_form .title .img_box .box_3 {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: 4%;
+    animation: birdFlyAni_3 3s infinite linear 1s;
+    opacity: 0;
+}
+
+/* 小鳥4 */
+.home .reserve .re_form .title .img_box .box_4 {
+    position: absolute;
+    bottom: 50%;
+    right: 40%;
+    width: 4%;
+    animation: birdFlyAni_4 3s infinite linear 1.5s;
+    opacity: 0;
+}
+
+/* 文字 */
+.home .reserve .re_form .list {
+    width: 50vw;
+}
+
+.home .reserve .re_form .list p {
+    color: #ffffff;
+}
+
+.home .reserve .re_form .list .law {
+    display: flex;
+    padding-top: 1vw;
+}
+
+.home .reserve .re_form .list .law a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+/* 按鈕送出 */
+.home .reserve .re_form .btn {
+    width: 47vw;
+    border-radius: 30px;
+    border: none;
+    background-color: #00a2b9;
+    margin: 2vw 0 4vw;
+}
+
+.home .reserve .re_form .btn input {
+    width: 20vw;
+    background-image: url(https://ws.srl.tw/cs/2022032516281868/img/img2022032818063362.webp);
+    background-size: cover;
+    font-size: 20px;
+    background-color: #c9c9c9;
+    padding: 0.5vw 7vw;
+    border-radius: 30px;
+    border: 3px solid #e9e9e9;
+    color: #fff;
+    cursor: pointer;
+}
+/* 電話專線 */
+.home .reserve .re_form .cel p{
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    line-height: 2;
+}
+.home .footer {
+    background-color: #4b4b4b;
+    padding: 20px;
+}
+
+.home .footer .txt_box {
+    display: flex;
+    justify-content: center;
+}
+
+.home .footer .txt_box p {
+    color: #ffffff;
+    padding: 0.5vw 1vw;
+}
+
+.home .footer .mark_box {
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-align: center;
+    color: #898989;
+    padding: 20px;
+}
+
+/* tool工具欄 */
+.home .tool {
+    display: none;
+}
+
+/* -------------------------導覽列--手機----------------------- */
+@media screen and (max-width:767px) {
+
+    /* 漢堡導覽列 */
+    .hb {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        margin: 1vw 5vw;
+        cursor: pointer;
+    }
+
+    .hb:before,
+    .hb:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background-color: #ffffff;
+        right: 0;
+        left: 2vw;
+        transform: rotate(0deg);
+        border-radius: 50%;
+    }
+
+    .hb:before {
+        top: 10px;
+        /* 調整中間位子 */
+        box-shadow: 0px 10px 0px #ffffff;
+        transition: box-shadow .3s .6s,
+            top .3s .3s,
+            transform .3s .0s;
+    }
+
+    .hb:after {
+        bottom: 10px;
+        transition: bottom .3s .3s,
+            transform .3s 0s;
+    }
+
+    #menu-check:checked~.main-header .hb:before {
+        top: 18px;
+        box-shadow: 0px 13px 0px #ff00;
+        transform: rotate(45deg);
+        transition: box-shadow .3s 0s,
+            top .3s .3s,
+            transform .3s .6s;
+    }
+
+    #menu-check:checked~.main-header .hb:after {
+        bottom: 18px;
+        transform: rotate(-45deg);
+        transition: bottom .3s .3s,
+            transform .3s .6s;
+    }
+
+    nav {
+        /* 這裡只有手機需要 */
+        position: absolute;
+        /* 大小 */
+        width: 100vw;
+        top: 100%;
+        /* 調整往哪裡滑進來，但重點是要讓他先完全出去，不然當它opacity:0,還是會點到它 */
+        left: -90%;
+        opacity: 0;
+        background-color: #00a2b9;
+        /* 讓它有滑出效果慢慢淡出 */
+        transition: 1s;
+    }
+
+    #menu-check:checked~.main-header nav {
+        opacity: 1;
+        left: 0;
+        transition: 1s;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .main-header a+a {
+        border-top: 1px solid #ffffff;
+    }
+
+    header {
+        justify-content: flex-start;
+        box-shadow: none;
+    }
+
+    /* logo */
+    #logo {
+        display: none;
+    }
+
+    /* 首頁 */
+    .home .ad {
+        background: url(../img/BG_ph.jpg) no-repeat center;
+    }
+
+    .home .ad {
+        flex-direction: column;
+        margin-top: 4vw;
+        padding: 5vw;
+    }
+
+    /* 文字  東佳興建設*/
+    .home .ad .title_txt_box {
+        width: 15vw;
+        padding: 5vw;
+    }
+
+    /* 小鳥圖 */
+    .home .ad .img_box {
+        padding: 10vw;
+        width: 65vw;
+        padding-right: 11px;
+    }
+
+    /* 右邊icon */
+    .home .ad .life_icon {
+        display: none;
+    }
+
+    /* 文字  青空蔚來*/
+    .home .ad .txt_box:first-child {
+        width: 70vw;
+    }
+
+    /* 文字 中科好境 */
+    .home .ad .txt_box {
+        width: 70vw;
+
+    }
+
+    /* 地圖 */
+    /* iframe可以修改的有限要在css修改 */
+    .home .google iframe {
+        height: 50vh;
+    }
+
+    /* 360度區域環景 */
+    .home .view {
+
+        padding: 0;
+    }
+
+    .home .view .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 圖 */
+    .home .view .box .img_box {
+        width: 100vw;
+        padding: 0;
+    }
+
+    /* 文字 */
+    .home .view .box .txt_box {
+        /* width: 100vw; */
+        padding: 10vw;
+    }
+
+    /* 小鳥 */
+    .home .view .box .txt_box .img_box {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 58vw;
+        padding: 0;
+        width: 20vw;
+    }
+
+    .home .view .box .txt_box .img_box img {
+        width: 20vw;
+    }
+
+    /* 英文字 */
+    .home .view .box .txt_box img {
+        width: 55vw;
+        padding: 5vw;
+        padding-left: 0;
+    }
+
+    .home .view .box .txt_box h2 {
+        padding: 0.5em 0px;
+        font-weight: 700;
+    }
+
+    .home .view .box .txt_box p {
+        letter-spacing: 1.5px;
+    }
+
+    /* 藍線 */
+    .home .line {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    /* 輪播 */
+    .home .ktv {
+        padding: 0;
+    }
+
+    .home .ktv .box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .home .ktv .box .img_box {
+        width: 95vw;
+    }
+
+    /* 箭頭 */
+    .pagination {
+        left: 40vw;
+    }
+
+    /* 文字 */
+    .home .ktv .box .txt_box {
+        padding: 10vw;
+    }
+
+    /* 小鳥 */
+    .home .ktv .box .txt_box .img_box {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 58vw;
+        padding: 0;
+        width: 20vw;
+    }
+
+    .home .ktv .box .txt_box .img_box img {
+        width: 20vw;
+    }
+
+    /* 英文字 */
+    .home .ktv .box .txt_box img {
+        width: 55vw;
+        padding: 5vw;
+        padding-left: 0;
+    }
+
+    .home .ktv .box .txt_box h2 {
+        padding: 5vw;
+        padding-left: 0;
+        font-weight: 700;
+    }
+
+    .home .ktv .box .txt_box p {
+        letter-spacing: 1.5px;
+    }
+
+    .home .ktv .pagination {
+        left: 40vw;
+    }
+
+    .home .bule .txt_box .logo {
+        width: 70vw;
+    }
+
+    .home .bule .txt_box h2 {
+        margin: 4vw 0 4vw 0;
+    }
+
+    .home .bule .txt_box h3 {
+        margin: 20px 0 50px 0;
+        letter-spacing: 1.5px;
+
+    }
+
+    .home .bule .txt_box h4 {
+        box-sizing: border-box;
+        width: 60vw;
+        padding: 2vw;
+        letter-spacing: 1.5px;
+        line-height: 5vw;
+    }
+    /* 新光田特區 */
+    .home .map .item{
+        flex-direction: column;
+    }
+    .home .item .txt_box .e_img{
+        width:60vw;
+    }
+    .home .item .txt_box h2{
+        padding: 30px 0;
+        font-size: 32.5px;
+    }
+    /* 卡片 */
+    .home .item .txt_box .card{
+        flex-wrap: wrap;
+    }
+    .home .item .txt_box .card .item_box{
+        width: 39vw;
+    }
+    .home .item .txt_box .card .item_box:nth-child(1) {
+        width: 80vw;
+        border-radius: 7px 7px 0 0 ;
+    }
+    .home .item .txt_box .card .item_box:nth-child(2){
+        border-radius: 0 0 0 7px ;
+    }
+
+    .home .item .txt_box .card .item_box:nth-child(3){
+        border-radius: 0 0 7px 0 ;
+    }
+    
+
+    /* 九宮格 */
+    .home .life_box {
+        margin: 0 auto;
+        /* width: 100vw; */
+    }
+
+    .home .life_box .jiugo {
+        margin: 0;
+        padding: 40px 30px;
+    }
+
+    .home .life_box a {
+        width: 40vw;
+    }
+
+    /* 按鈕 */
+    .home .google button p {
+        font-size: 23px;
+        padding: 1vw;
+    }
+
+    /* icon */
+    .home .google button img {
+        width: 5vw;
+    }
+    /* 預約鑑賞 */
+    .home .reserve .re_form .txt input{
+        width:83vw;
+    }
+    .home .reserve .re_form .txt{
+        width: 90vw;
+    }
+    .home .reserve .re_form .txt textarea{
+        width:90vw;
+        font-size: 12px;
+    }
+    .home .reserve .re_form .list{
+        width:86vw;
+    }
+    .home .reserve .re_form .list p{
+        font-size: 12px;
+    }
+    .home .reserve .re_form .list .law a{
+        font-size: 12px;
+    }
+    .home .reserve .re_form .btn input{
+        width: 40vw;
+    }
+
+    /* footer */
+    .home .footer {
+        padding-bottom: 25vw;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .home .footer .txt_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 13px;
+    }
+
+    /* tool工具欄 */
+    .home .tool {
+        background-color: #00A2B9;
+        position: fixed;
+        z-index: 80;
+        bottom: 0;
+        width: 100vw;
+        display: block;
+
+    }
+
+    .home .tool_box .box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home .tool_box .box a {
+        color: #ffffff;
+        padding: 4vw;
+        margin: 1.5;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .home .tool_box .box a:hover {
+        text-decoration: #ffffff;
+    }
+
+    .home .tool_box .box img {
+        width: 5vw;
+        padding: 2vw;
+    }
+
+}

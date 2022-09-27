@@ -1,0 +1,109 @@
+.tool_div {
+    display: none;
+}
+@media (max-width: 768px) {
+    .range {
+        transition: 0.5s;
+        scale: 1;
+    }
+
+    .range.scale {
+        transition: 0.5s;
+        scale: 1.1;
+    }
+
+    .tool_div {
+        display: block;
+        flex-direction: row;
+        transition: .2s all;
+        z-index: 999;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 7%;
+        width: 100%;
+        scale: 1;
+
+        .range {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            position: relative;
+            .cell {
+                display: flex;
+                align-content: center;
+                align-items: center;
+
+                background-color: #000;
+                line-height: calc((6vw / 65)*100);
+                border-radius: calc((50vw / 175)*100);
+                padding: 8px 20px;
+                line-height: 1;
+                width: 100%;
+                z-index: 3;
+                .cell_1 {
+                    display: flex;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                    }
+
+                    a:nth-child(1) {
+                        width: 6vw;
+                        padding-right: 1.5vw;
+                    }
+                }
+
+                .lens {
+                    width: 14%;
+                    display: flex;
+                    margin-left: 12vw;
+                }
+            }
+
+            .face {
+                background-color: #1877f2;
+                line-height: calc((6vw / 65)*100);
+                border-radius: calc((50vw / 175)*100);
+                border-radius: 50%;
+                width: 9vw;
+                height: 9vw;
+                position: absolute;
+                // right: 20vw;
+                // top: 0vw;
+                transform: translateX(25vw);
+                z-index: 0;
+                animation: move .8s ease-in-out 0s 1;
+
+                @keyframes move {
+                    0%{
+                        transform: translateX(0);
+                        opacity: 0;
+                    }
+                    100%{
+                        transform: translateX(25vw);
+                        opacity: 1;
+                    }
+                }
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    width: 30%;
+                    margin: 2vw auto;
+                }
+            }
+        }
+    }
+
+    .tool_div div:nth-child(1) a {
+        color: #fff !important;
+        text-decoration: none;
+    }
+
+}

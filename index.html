@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青空蔚來</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 動畫套件 -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- 輪播 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- 動態島 -->
+    <link rel="stylesheet" href="scss\island.css">
+
+    <!-- Scroll gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="tool_div flex_box island ">
+        <div class="range move">
+            <div class="cell">
+                <div class="cell_1">
+                    <a class="msg_btn" href="#top"><img src="calendar.png"></a>
+                    <a data-content="立即預約" class="msg_btn a" href="#top">立即預約</a>
+                </div>
+                <div class="lens" href="#"><img src="lens.png" alt=""></div>
+            </div>
+            <div class="face">
+                <a href="https://www.facebook.com/wangzhan130" target="_blank"><img src="new_fb.png"></a>
+            </div>
+        </div>
+    </div>
+    <main class="home">
+        <input type="checkbox" id="menu-check">
+
+        <!-- 導覽列 -->
+        <header class="main-header">
+            <!-- logo-->
+            <a id="logo" href="#"><img src="img/case2021120218013916123949.svg" alt="青空蔚來logo"></a>
+            <!-- 漢堡的部分 -->
+            <label for="menu-check" class="hb"></label>
+            <!-- 導覽列 -->
+            <nav>
+                <ul>
+                    <li><a href="#" id="fb">新光田特區</a></li>
+                    <li><a href="#" id="fb">800坪景觀花園</a></li>
+                    <li><a href="#" id="twitter">全棟系統鋁模板</a></li>
+                    <li><a href="#" id="fb">旺展機構</a></li>
+                    <li><a href="#" id="twitter">預約鑑賞</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="ad col_1">
+            <!-- 文字  東佳興建設-->
+            <span class="title_txt_box wow fadeIn">
+                <img src="img/img2022051617551270.svg" alt="東佳興建設">
+            </span>
+            <!-- 文字 -->
+            <div class="txt_box wow fadeIn">
+                <img src="img/case2021120218013916123949.svg" alt="青空蔚來">
+                <img src="img/img2022051617470312.svg" alt="中科好境">
+            </div>
+            <!-- 小鳥圖片 -->
+            <div class="img_box">
+                <img src="img/LEFT.png" alt="小鳥圖片">
+            </div>
+            <!-- 右邊icon -->
+            <div class="life_icon">
+                <a href="#">
+                    <p>食</p>
+                </a>
+                <a href="#">
+                    <p>醫</p>
+                </a>
+                <a href="#">
+                    <p>住</p>
+                </a>
+                <a href="#">
+                    <p>行</p>
+                </a>
+                <a href="#">
+                    <p>育</p>
+                </a>
+                <a href="#">
+                    <p>樂</p>
+                </a>
+                <a href="#">
+                    <p style="letter-spacing: 0.3vw;">...</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- 新光田特區 -->
+        <section class="map wow fadeIn col_2" data-wow-delay="0.2s">
+            <div class="item">
+                <!-- 文字 -->
+                <div class="txt_box">
+                    <!-- 英文字 -->
+                    <div class="e_img">
+                        <img src="img/img202203280955383.svg">
+                    </div>
+                    <h2 style="color: #595757;">新光田特區起飛<br>看見繁華榮景</h2>
+                    <p class="wow fadeIn" data-wow-delay="0.3s" style="color:#3e3a39;font-size: 17px;">
+                        光田醫院向上院區、特五道路2022年即將完工，近擁中科、精科、台中工業區黃金科技走廊，近距國道1號、
+                        國道3號、向上路快捷路網，近享新光田商圈、北勢東路商圈、東海商圈豐足便利，「新光田特區」強勢崛起!</p>
+                    <div class="card">
+                        <!-- 1 -->
+                        <div class="item_box">
+                            <!-- 圖片 -->
+                            <div class="img_box">
+                                <img src="img/img2022032810000946.jpg" alt="">
+                            </div>
+                            <!-- 文字 -->
+                            <div class="m_txt_box">
+                                <p>中科西南向聯外道路 特五號</p>
+                                <small>(興建中)</small>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="item_box">
+                            <!-- 圖片 -->
+                            <div class="img_box">
+                                <img src="img/img2022032810002162.jpg" alt="">
+                            </div>
+                            <!-- 文字 -->
+                            <div class="m_txt_box">
+                                <p>國道三號 龍井交流道</p>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="item_box">
+                            <!-- 圖片 -->
+                            <div class="img_box">
+                                <img src="img/img2022032810003731.jpg" alt="">
+                            </div>
+                            <!-- 文字 -->
+                            <div class="m_txt_box">
+                                <p>中部科學園區</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 地圖 -->
+                <div class="img_box">
+                    <img src="img/img2022032917353654.webp" alt="地圖">
+                </div>
+            </div>
+        </section>
+
+        <!-- 360度區域環景 -->
+        <section class="view col_3">
+            <div class="box">
+                <!-- 圖 -->
+                <div class="img_box wow fadeIn" data-wow-delay="0.2s">
+                    <img src="img/img2022031011460986.webp" alt="">
+                </div>
+                <!-- 文字 -->
+                <div class="txt_box">
+                    <!-- 英文字 -->
+                    <img src="img/img2021120315161799.svg">
+                    <!-- 小鳥 -->
+                    <div class="img_box wow heartBeat" data-wow-duration="5s" data-wow-iteration="10000">
+                        <img src="img/img2022032816562421.webp" alt="小鳥圖片">
+                    </div>
+                    <h2 style="color: #595757;">360°區域環景地標
+                        <br> 看見山海大景</h2>
+                    <p class="wow fadeIn" data-wow-delay="0.3s" style="color:#3e3a39;font-size: 17px;">
+                        前擁無限蔚藍海景，後抱永恆翠綠山景，</p>
+                    <p class="wow fadeIn" data-wow-delay="0.3s" style="color:#3e3a39;font-size: 17px;">
+                        將360°遼闊風景，全部化為家的動人窗景!</p>
+                </div>
+            </div>
+            <!-- 藍線 -->
+            <hr class="">
+        </section>
+
+        <!-- 素描建築 -->
+        <section class="build">
+            <div class="img_box">
+                <img src="img/img2022032812405454.webp" alt="">
+            </div>
+            <p style="text-align: right;color: #333;bottom: 5px; letter-spacing: 1px;font-size:12px;">
+                青空蔚來建築外觀｜手繪情境示意圖</p>
+            <!-- 藍線 -->
+            <hr class="line">
+        </section>
+
+        <section class="garden wow fadeIn" data-wow-delay="0.3s">
+            <!-- 圖片 -->
+            <div class="box">
+                <!-- 地圖 -->
+                <div class="img_box">
+                    <img src="img/img2021121419333435.jpg" alt="花園">
+                </div>
+            </div>
+        </section>
+
+        <!-- 輪播 -->
+        <section class="ktv">
+            <div class="box">
+                <!-- 左文字 -->
+                <div class="img_box swiper" style="z-index:70;">
+                    <div class="swiper-wrapper">
+                        <!-- 第一個 -->
+                        <div class="swiper-slide">
+                            <img src="img/img2022040110565516.jpg" alt="">
+                        </div>
+                        <!-- 第二個 -->
+                        <div class="swiper-slide">
+                            <img src="img/img2022040110572994 (1).jpg" alt="">
+                        </div>
+                        <!-- 第三個 -->
+                        <div class="swiper-slide">
+                            <img src="img/img2022040110571192.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="pagination" style="z-index:70; position: relative;"></div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev" style="color:rgba(255, 255, 255, 0.466);"></div>
+                    <div class="swiper-button-next" style="color:rgba(255, 255, 255, 0.466);"></div>
+
+                    <!-- 如果需要滚动条 -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+                <!-- 右圖 -->
+                <div class="txt_box">
+                    <!-- 英文字 -->
+                    <img src="img/img2021120315161799.svg">
+                    <!-- 小鳥 -->
+                    <div class="img_box wow heartBeat" data-wow-duration="5s" data-wow-iteration="10000">
+                        <img src="img/img2022032816562421.webp" alt="小鳥圖片">
+                    </div>
+                    <h2 style="color: #595757;">約330坪渡假公設
+                        <br>
+                        看見慢活光景</h2>
+                    <p class="wow fadeIn" data-wow-delay="0.3s" style="color:#3e3a39;font-size: 17px;">
+                        寬18.5米,深18米飯店式大廳開闊相迎，</p>
+                    <p class="wow fadeIn" data-wow-delay="0.3s" style="color:#3e3a39;font-size: 17px;">
+                        高空娛樂室、健身房、視聽劇院...公設豐富多元，</p>
+                    <p class="wow fadeIn" data-wow-delay="0.3s" style="color:#3e3a39;font-size: 17px;">在星空Sky
+                        Lounge放鬆休閒，為美好人生乾杯!</p>
+                </div>
+            </div>
+            <!-- 藍線 -->
+            <hr class="line">
+        </section>
+
+        <!-- 全棟系統鋁模板 -->
+        <section class="board wow fadeIn" data-wow-delay="0.4s">
+            <!-- 圖片 -->
+            <div class="box">
+                <!-- 全棟系統鋁模板 -->
+                <div class="img_box">
+                    <img src="img/img2022041416132378.jpg" alt="全棟系統鋁模板">
+                </div>
+            </div>
+        </section>
+
+        <!-- 旺展機構 -->
+        <section class="classic wow fadeIn" data-wow-delay="0.5s">
+            <!-- 圖片 -->
+            <div class="box">
+                <!-- 旺展機構 -->
+                <div class="img_box">
+                    <img src="img/img2022041416133317.jpg" alt="旺展機構">
+                </div>
+            </div>
+        </section>
+
+        <section class="bule">
+            <div class="txt_box">
+                <img class="logo wow fadeIn" data-wow-delay="0.6s" src="img/case2021120218013916123949.svg" alt="青空蔚來">
+                <h3 class="wow fadeIn" data-wow-delay="0.7s">給自己最美的風景</h3>
+                <h2 class="wow fadeIn" data-wow-delay="0.8s">新光田特區｜千坪花園基地
+                    <br>
+                    360°環景視野｜景觀2-3房
+                </h2>
+                <h4 class="wow fadeIn" data-wow-delay="0.9s">旺展機構｜東佳興建設</h4>
+            </div>
+        </section>
+
+        <!-- 九宮格 -->
+        <section class="life_box col_4">
+            <div class="jiugo wow fadeIn" data-wow-delay="1s">
+                <div class="box">
+                    <a>
+                        <div class="img_box">
+                            <img src="img/food.svg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p>食</p>
+                        </div>
+                    </a>
+                    <a>
+                        <div class="img_box">
+                            <img src="img/doctor.svg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p>醫</p>
+                        </div>
+                    </a>
+                    <a>
+                        <div class="img_box">
+                            <img src="img/new_live.png" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p>住</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a>
+                        <div class="img_box">
+                            <img src="img/traffic.svg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p>行</p>
+                        </div>
+                    </a>
+                    <a>
+                        <div class="img_box">
+                            <img src="img/school.svg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p>育</p>
+                        </div>
+                    </a>
+                    <a>
+                        <div class="img_box">
+                            <img src="img/shopping_mall.svg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p>樂</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a>
+                        <div class="img_box">
+                            <img src="img/park.svg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p>公園</p>
+                        </div>
+                    </a>
+                    <a>
+                        <div class="img_box">
+                            <img src="img/bus_station.svg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p>公車站</p>
+                        </div>
+                    </a>
+                    <a>
+                        <div class="img_box">
+                            <img src="img/convenience_store.svg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p>商店</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 地圖 -->
+        <section class="google">
+            <div class="go_map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.7740032663004!2d120.56725!3d24.203416699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1851368e72e09ab7!2zMjTCsDEyJzEyLjMiTiAxMjDCsDM0JzAyLjEiRQ!5e0!3m2!1szh-TW!2stw!4v1658741913865!5m2!1szh-TW!2stw"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="btn">
+                <a style="text-decoration:none;"
+                    href="https://www.google.com.tw/maps/place/24%C2%B012'12.3%22N+120%C2%B034'02.1%22E/@24.2034167,120.56725,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x1851368e72e09ab7!7e2!8m2!3d24.2034228!4d120.5672389?hl=zh-TW">
+                    <button style="cursor: pointer;">
+                        <img src="img/map.svg" alt="icon">
+                        <p>導航</p>
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <!-- 預約鑑賞 -->
+        <section class="reserve" id="top">
+            <!-- 表單 -->
+            <form class="re_form wow fadeIn" data-wow-delay="1.1s">
+                <!-- 圖片 標題 -->
+                <div class="title">
+                    <!-- 文字 -->
+                    <div class="txt_box">
+                        <h3>預約鑑賞</h3>
+                    </div>
+                    <!-- 小鳥圖片 -->
+                    <!-- <div class="img_box">
+                        <div class="box_1">
+                            <div class="bird">
+                                <img src="img/img2022032310123125.svg" alt="1">
+                            </div>
+                        </div>
+                        <div class="box_2">
+                            <div class="bird">
+                                <img src="img/img2022032310123125.svg" alt="2">
+                            </div>
+                        </div>
+                        <div class="box_3">
+                            <div class="bird">
+                                <img src="img/img2022032310125040.svg" alt="3">
+                            </div>
+                        </div>
+                        <div class="box_4">
+                            <div class="bird">
+                                <img src="img/img2022032310125040.svg" alt="4">
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- 填寫區 -->
+                <div class="txt">
+                    <p>姓名:</p>
+                    <input type="text" required="" />
+                    <p>電話/手機:</p>
+                    <input type="tel" required="" />
+                    <p>電子信箱:</p>
+                    <input type="text" required="" />
+                    <p>留言內容:</p>
+                    <textarea type="textarea" placeholder="請輸入您的留言(選填)" required=""></textarea>
+                </div>
+
+                <!-- 文字 -->
+                <div class="list">
+                    <p>你所登錄的個人資料將做為下用途</p>
+                    <p>
+                        (一)本網站所載之相關事項通知<br>(二)客戶管理與服務<br>(三)本公司行銷業務之推廣本案實際內容以現場公布為準。<br>
+                    </p>
+                    <div class="law">
+                        <input type="checkbox">
+                        <p> 本人已知悉『</p>
+                        <a href="https://ws.srl.tw/cs/2021120218013916/privacy.html">個人資料搜集聲明事項</a>
+                        <p>』</p>
+                    </div>
+                </div>
+                <!--按鈕送出-->
+                <button class="btn">
+                    <input type="submit" value="送出表單">
+                </button>
+
+                <div class="cel">
+                    <p>客戶服務中心｜沙鹿區向上路。自立路口</p>
+                    <br>
+                    <p>服務專線｜042652-3711</p>
+                </div>
+            </form>
+        </section>
+        <!-- footer -->
+        <section class="footer">
+            <div class="txt_box">
+                <p>青空蔚來｜新光田特區</p>
+                <p>360環景視野，景觀2-3房</p>
+                <p>接待會館：沙鹿區向上路。自立路口</p>
+                <p>禮賓專線：04-2652-3711</p>
+            </div>
+            <div class="mark_box">
+                <p>藝宿廣告</p>
+            </div>
+        </section>
+
+        <!-- tool工具欄 -->
+        <section class="tool">
+            <div class="tool_box">
+                <div class="box">
+                    <a href="#" id="TEL">
+                        <img src="img/new-phone.gif" alt="">
+                        <p>TEL</p>
+                    </a>
+                    <a href="#" id="LINE">
+                        <img src="img/new_line.png" alt="">
+                        <p>LINE</p>
+                    </a>
+                    <a href="#" id="FB">
+                        <img src="img/new_fb.png" alt="">
+                        <p>FB</p>
+                    </a>
+                    <a href="#" id="Life">
+                        <img src="img/new_live.png" alt="">
+                        <p>Life</p>
+                    </a>
+                    <a href="#" id="map">
+                        <img src="img/map.svg" alt="">
+                        <p>map</p>
+                    </a>
+                    <a href="#" id="more">
+                        <img src="img/new_more.png" alt="">
+                        <p>more</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        new WOW().init();
+
+        var mySwiper = new Swiper('.swiper', {
+            // direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay: {
+                disableOnInteraction: false, //手動滑動不打斷播放
+                delay: 3000, //自動輪播時間
+            },
+
+            // 如果需要分页器
+            pagination: {
+                el: '.pagination',
+                clickable: true, //可點擊圓圈
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //     clickable: true, //可點擊圓圈
+            // },
+        });
+    </script>
+
+    <!-- 滾動有scale效果 -->
+    <script>
+        let boxs = document.getElementsByClassName('move');
+
+        function createScrollStopListener(element, callback, timeout) {
+            let handle = null;
+
+            let onScroll = () => {
+                if (handle) {
+                    for (let i = 0; i < boxs.length; i++) {
+                        boxs.item(i).classList.add('scale');
+                    }
+                    clearTimeout(handle);
+                }
+                handle = setTimeout(callback, timeout || 200); // default 200 ms
+            };
+            element.addEventListener('scroll', onScroll);
+
+            return () => {
+                element.removeEventListener('scroll', onScroll);
+            };
+        }
+
+        createScrollStopListener(window, function () {
+            for (let i = 0; i < boxs.length; i++) {
+                boxs[i].classList.remove('scale');
+            }
+        });
+    </script>
+
+    <script>
+        function AppleIsland() {
+            let t1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".col_1",
+                    star: "top bottom",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse",
+                }
+            })
+            t1.fromTo(".face", {
+                opacity: "1",
+                display: "block",
+            }, {
+                opacity: "0",
+                display: "none",
+                duration: 0.5,
+            }, "<").to(".cell", {
+                width: "45%",
+                height: "3vh",
+                duration: 0.5,
+            }, "<")
+        }
+        AppleIsland()
+    </script>
+
+    <script>
+        function AppleIsland() {
+            let t1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".col_2",
+                    star: "top bottom",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse",
+                }
+            })
+            t1.fromTo(".cell", {
+                width: "45%",
+                height: "3vh",
+            }, {
+                width: "42%",
+                height: "3vh",
+                duration: 0.5,
+            }, "<").to(".tool_div", {
+                scale: "1.1",
+                duration: 0.5,
+            }, "<")
+        }
+        AppleIsland()
+    </script>
+
+    <script>
+        function AppleIsland_1() {
+            let t1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".col_3",
+                    star: "top bottom",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse",
+                }
+            })
+            t1.fromTo(".face", {
+                    opacity: "0",
+                    display: "none",
+                }, {
+                    opacity: "1",
+                    display: "block",
+                    duration: 0.5,
+                }, "<")
+                .to(".cell", {
+                    width: "28%",
+                    height: "3vh",
+                    duration: 0.5,
+                    fontSize: "xx-small",
+                }, "<").to(".lens", {
+                    marginLeft: "1.5vw",
+                    duration: 0.5,
+                }, "<")
+        }
+        AppleIsland_1()
+    </script>
+
+    <script>
+        function AppleIsland_2() {
+            let t1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".col_4",
+                    star: "top bottom",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse",
+                }
+            })
+            t1.fromTo(".lens", {
+                opacity: "1",
+                display: "block",
+            }, {
+                opacity: "0",
+                display: "none",
+                duration: 0.5,
+            }, "<").to(".cell", {
+                width: "60%",
+                height: "15vw",
+                duration: 0.5,
+            }, "<").to(".face", {
+                opacity: "0",
+                display: "none",
+                duration: 0.5,
+            }, "<").to(".cell", {
+                fontSize: "initial",
+                paddingLeft: "42px",
+                paddingRight: "42px",
+                duration: 0.5,
+            }, "<")
+        }
+        AppleIsland_2()
+    </script>
+
+    <script src="js/plugins/jquery-3.5.1.min.js"></script>
+    <script src="js/plugins/gsap3/dist/gsap.min.js"></script>
+</body>
+
+</html>
