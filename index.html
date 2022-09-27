@@ -734,7 +734,7 @@
         }
         AppleIsland_1()
     </script>
-
+    
     <!-- col_6 -->
     <script>
         function AppleIsland_1() {
@@ -784,13 +784,15 @@
             }, "<").to(".cell", {
                 width: "60%",
                 height: "10vw",
-                fontSize: "initial",
-                paddingLeft: "42px",
-                paddingRight: "42px",
                 duration: 0.5,
             }, "<").to(".face", {
                 opacity: "0",
                 display: "none",
+                duration: 0.5,
+            }, "<").to(".cell", {
+                fontSize: "initial",
+                paddingLeft: "42px",
+                paddingRight: "42px",
                 duration: 0.5,
             }, "<")
         }
