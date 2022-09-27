@@ -101,6 +101,96 @@
     width: 30%;
     margin: 2vw auto;
   }
+  .tool_div .range .line {
+    position: absolute;
+    transform: translateX(25vw);
+    z-index: 0;
+    -webkit-animation: move 0.8s ease-in-out 0s 1;
+            animation: move 0.8s ease-in-out 0s 1;
+    display: none;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(25vw);
+      opacity: 1;
+    }
+  }
+  .tool_div .range .line a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 11%;
+    margin: 2vw auto;
+  }
+  .tool_div .range .call {
+    background-color: #ca7658;
+    line-height: 9.2307692308vw;
+    border-radius: 28.5714285714vw;
+    border-radius: 50%;
+    width: 9vw;
+    height: 9vw;
+    position: absolute;
+    transform: translateX(25vw);
+    z-index: 0;
+    -webkit-animation: move 0.8s ease-in-out 0s 1;
+            animation: move 0.8s ease-in-out 0s 1;
+    display: none;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(25vw);
+      opacity: 1;
+    }
+  }
+  .tool_div .range .call a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    margin: 2vw auto;
+  }
+  .tool_div .range .life {
+    background-color: #0d004a;
+    line-height: 9.2307692308vw;
+    border-radius: 28.5714285714vw;
+    border-radius: 50%;
+    width: 9vw;
+    height: 9vw;
+    position: absolute;
+    transform: translateX(25vw);
+    z-index: 0;
+    -webkit-animation: move 0.8s ease-in-out 0s 1;
+            animation: move 0.8s ease-in-out 0s 1;
+    display: none;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(25vw);
+      opacity: 1;
+    }
+  }
+  .tool_div .range .life a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    margin: 2vw auto;
+  }
   .tool_div div:nth-child(1) a {
     color: #fff !important;
     text-decoration: none;
