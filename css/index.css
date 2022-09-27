@@ -11,13 +11,13 @@ img {
 /* logo */
 header {
     position: fixed;
-    top: 0;
+    top: 1%;
     right: 0;
     left: 0;
     display: flex;
     justify-content: space-around;
     box-shadow: 1px 5px 20px rgb(0 0 0 / 20%);
-    background-color: #00A2B9;
+    /* background-color: #00A2B9; */
     z-index: 80;
     width: 100vw;
 }
@@ -86,6 +86,9 @@ nav ul li a:hover::after {
 }
 
 /* 桌機板 */
+.home{
+    background-color: #00A2B9;
+}
 .home .ad {
     background: url(../img/BG_ph.jpg) no-repeat center;
     background-repeat: no-repeat;
