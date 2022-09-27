@@ -83,6 +83,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
     right: 0%;
     left: 0%;
+    
 }
 
 /* 桌機板 */
@@ -735,6 +736,15 @@ nav ul li a:hover::after {
         background-color: #00a2b9;
         /* 讓它有滑出效果慢慢淡出 */
         transition: 1s;
+    }
+    #menu-check{
+        opacity: 0;
+        position: relative;
+        left: 5%;
+        width: 10%;
+        top: 3%;
+        position: fixed;
+        z-index: 999;
     }
 
     #menu-check:checked~.main-header nav {
