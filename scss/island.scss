@@ -47,7 +47,7 @@
                 .cell_1 {
                     display: flex;
 
-                    a {
+                    .box {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -55,7 +55,7 @@
                         font-size: 3.2vw;
                     }
 
-                    a:nth-child(1) {
+                    .box:nth-child(1) {
                         width: 6vw;
                         padding-right: 1.5vw;
                     }
@@ -218,7 +218,7 @@
         }
     }
 
-    .tool_div div:nth-child(1) a {
+    .tool_div div:nth-child(1) .box {
         color: #fff !important;
         text-decoration: none;
     }
