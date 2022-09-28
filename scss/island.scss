@@ -6,6 +6,9 @@
     .range {
         transition: 0.5s;
         scale: 1;
+        a{
+            text-decoration: none;
+        }
     }
 
     .range.scale {

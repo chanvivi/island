@@ -7,6 +7,9 @@
     transition: 0.5s;
     scale: 1;
   }
+  .range a {
+    text-decoration: none;
+  }
   .range.scale {
     transition: 0.5s;
     scale: 1.1;
