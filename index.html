@@ -612,7 +612,7 @@
             $("#maps").click(function () {
                 $("html,body").animate({
                         scrollTop: $($("#maps").attr('href')).offset().top
-                    }, 500 /*scroll實現定位滾動*/
+                    }, 1000 /*scroll實現定位滾動*/
 
                 ); /*讓整個頁面可以滾動*/
                 return false;
@@ -741,6 +741,7 @@
                 }, {
                     opacity: "0",
                     display: "none",
+                    x: 0,
                     duration: 0.5,
                 }, "<")
                 .to(".call", {
@@ -768,6 +769,7 @@
                 }, {
                     opacity: "0",
                     display: "none",
+                    x: 0,
                     duration: 0.5,
                 }, "<")
                 .to(".life", {
@@ -795,6 +797,7 @@
                 }, {
                     opacity: "0",
                     display: "none",
+                    x: 0,
                     duration: 0.5,
                 }, "<")
                 .to(".face", {
