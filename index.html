@@ -30,8 +30,8 @@
         <div class="range move">
             <div class="cell">
                 <div class="cell_1">
-                    <a class="msg_btn" href="#reserve"><img src="calendar.png"></a>
-                    <a data-content="立即預約" class="msg_btn a" href="#reserve">立即預約</a>
+                    <a href="#reserve" class="msg_btn" ><img src="calendar.png"></a>
+                    <a href="#reserve" data-content="立即預約" class="msg_btn a">立即預約</a>
                 </div>
                 <div class="lens" href="#"><img src="lens.png" alt=""></div>
             </div>
@@ -605,14 +605,14 @@
         });
         
     </script>
-    
+
     <script>
         // 紅色maps
         $(document).ready(function () {
             $("#maps").click(function () {
                 $("html,body").animate({
                         scrollTop: $($("#maps").attr('href')).offset().top
-                    }, 800 /*scroll實現定位滾動*/
+                    }, 500 /*scroll實現定位滾動*/
 
                 ); /*讓整個頁面可以滾動*/
                 return false;
