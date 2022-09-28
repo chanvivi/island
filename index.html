@@ -30,7 +30,7 @@
         <div class="range move">
             <a href="#reserve" id="reserves" class="cell">
                 <div class="cell_box">
-                    <div class="box" ><img src="calendar.png"></div>
+                    <div class="box"><img src="calendar.png"></div>
                     <div class="box" data-content="立即預約">立即預約</div>
                 </div>
                 <div class="lens"><img src="lens.png" alt=""></div>
@@ -219,7 +219,7 @@
         </section>
 
         <!-- 輪播 -->
-        <section class="ktv ">
+        <section class="ktv col_8" style="height: 100vh;">
             <div class="box">
                 <!-- 左文字 -->
                 <div class="img_box swiper" style="z-index:70;">
@@ -291,7 +291,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="bule col_6" style="height: 100vh;">
             <div class="txt_box">
                 <img class="logo wow fadeIn" data-wow-delay="0.6s" src="img/case2021120218013916123949.svg" alt="青空蔚來">
@@ -579,7 +579,6 @@
             });
 
         });
-        
     </script>
 
     <script>
@@ -617,19 +616,19 @@
                 height: "3vh",
                 duration: 0.2,
             }, "<").to(".line", {
-                display:"none",
+                display: "none",
                 duration: 0.2,
             }, "<").to(".call", {
-                display:"none",
+                display: "none",
                 duration: 0.2,
             }, "<").to(".face", {
-                display:"none",
+                display: "none",
                 duration: 0.2,
             }, "<").to(".life", {
-                display:"none",
+                display: "none",
                 duration: 0.2,
             }, "<").to(".maps", {
-                display:"none",
+                display: "none",
                 duration: 0.2,
             }, "<")
         }
@@ -678,13 +677,16 @@
                     toggleActions: "play none none reverse",
                 }
             })
-            t1.fromTo(".maps", {
-                    opacity: "1",
-                    display: "block",
+            t1.fromTo(".cell", {
+                    width: "45%",
+                    height: "3vh",
                 }, {
+                    width: "28%",
+                    height: "3vh",
+                    duration: 0.5,
+                }, "<").to(".maps", {
                     opacity: "0",
                     display: "none",
-                    x: 0,
                     duration: 0.5,
                 }, "<")
                 .to(".line", {
@@ -774,6 +776,37 @@
                 .to(".face", {
                     opacity: "1",
                     display: "block",
+                    duration: 0.5,
+                }, "<")
+        }
+        AppleIsland_1()
+    </script>
+    <!-- col_8 -放大一點-->
+    <script>
+        function AppleIsland_1() {
+            let t1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".col_8",
+                    star: "top bottom",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse",
+                }
+            })
+            t1.fromTo(".cell", {
+                    width: "28%",
+                    height: "3vh",
+                }, {
+                    width: "45%",
+                    height: "3vh",
+                    duration: 0.5,
+                }, "<")
+                .to(".maps", {
+                    opacity: "0",
+                    display: "none",
+                    x: "0",
+                    duration: 0.5,
+                }, "<").to(".lens", {
+                    marginLeft: "3.5vw",
                     duration: 0.5,
                 }, "<")
         }
