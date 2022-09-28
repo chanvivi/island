@@ -42,17 +42,17 @@
     width: 100%;
     z-index: 3;
   }
-  .tool_div .range .cell .cell_1 {
+  .tool_div .range .cell .cell_box {
     display: flex;
   }
-  .tool_div .range .cell .cell_1 .box {
+  .tool_div .range .cell .cell_box .box {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     font-size: 3.2vw;
   }
-  .tool_div .range .cell .cell_1 .box:nth-child(1) {
+  .tool_div .range .cell .cell_box .box:nth-child(1) {
     width: 6vw;
     padding-right: 1.5vw;
   }
