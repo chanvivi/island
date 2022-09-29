@@ -46,7 +46,7 @@
                 line-height: 1;
                 width: 100%;
                 z-index: 3;
-                overflow: hidden;
+                // overflow: hidden;
                 justify-content: space-around;
 
                 .cell_box {
@@ -54,6 +54,7 @@
                     align-items: center;
                     width: 100%;
                     position: relative;
+                    overflow: hidden;
                     .box {
                         display: flex;
                         justify-content: center;
