@@ -77,7 +77,7 @@
     word-break: break-all;
     white-space: nowrap;
     z-index: 15;
-    letter-spacing: 1.5vw;
+    letter-spacing: 1vw;
   }
   .tool_div .range .cell .lens {
     width: 14%;

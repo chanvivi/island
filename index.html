@@ -32,7 +32,7 @@
                 <div class="cell_box">
                     <div class="box"><img src="calendar.png"></div>
                     <div class="box">立即預約</div>
-                    <div class="box marquee" data-direction='right' data-duration='3500'>新光特區起飛，看見繁華。</div>
+                    <div class="box marquee">新光特區起飛，看見繁華。</div>
                 </div>
 
                 <div class="lens"><img src="lens.png" alt=""></div>
@@ -835,9 +835,11 @@
     <!-- marquee -->
     <script>
         $('.marquee').marquee({
-            duration: 20000,
+            duration: 7000,
             gap: 50,
-            direction: 'left',
+            // 播放時間
+            delayBeforeStart: 500,
+            direction: 'right',
             duplicated: true,
         });
     </script>
