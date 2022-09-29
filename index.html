@@ -613,32 +613,31 @@
                 }
             })
             t1.fromTo(".cell", {
-                    width: "45%",
-                    height: "3vh",
-                }, {
-                    width: "45%",
-                    height: "3vh",
-                    duration: 0.2,
-                }, "<").to(".box:nth-child(3)"
-                , {
-                    display: "none",
-                    duration: 0.2,
-                }, "<").to(".lines", {
-                    display: "none",
-                    duration: 0.2,
-                }, "<").to(".call", {
-                    display: "none",
-                    duration: 0.2,
-                }, "<").to(".face", {
-                    display: "none",
-                    duration: 0.2,
-                }, "<").to(".life", {
-                    display: "none",
-                    duration: 0.2,
-                }, "<").to(".maps", {
-                    display: "none",
-                    duration: 0.2,
-                }, "<")
+                width: "45%",
+                height: "3vh",
+            }, {
+                width: "45%",
+                height: "3vh",
+                duration: 0.2,
+            }, "<").to(".box:nth-child(3)", {
+                display: "none",
+                duration: 0.2,
+            }, "<").to(".lines", {
+                display: "none",
+                duration: 0.2,
+            }, "<").to(".call", {
+                display: "none",
+                duration: 0.2,
+            }, "<").to(".face", {
+                display: "none",
+                duration: 0.2,
+            }, "<").to(".life", {
+                display: "none",
+                duration: 0.2,
+            }, "<").to(".maps", {
+                display: "none",
+                duration: 0.2,
+            }, "<")
         }
         AppleIsland()
     </script>
@@ -689,14 +688,14 @@
                     height: "3vh",
                     duration: 0.5,
                 }, "<")
-                .to(".box:nth-child(3)"
-                , {
-                    display: "none",
+                .to(".box:nth-child(2)", {
+                    opacity:"1",
+                    // display: "block",
                     duration: 0.5,
                 }, "<")
-                .to(".box:nth-child(2)"
-                , {
-                    display: "block",
+                .to(".box:nth-child(3)", {
+                    opacity:"0",
+                    // display: "none",
                     duration: 0.5,
                 }, "<")
                 .to(".lines", {
@@ -814,12 +813,12 @@
                     display: "none",
                     x: "0",
                     duration: 0.5,
-                }, "<").to(".box:nth-child(2)"
-                , {
+                }, "<").to(".box:nth-child(2)", {
+                    opacity:"0",
                     display: "none",
-                    duration: 0.5,
-                }, "<").to(".box:nth-child(3)"
-                , {
+                    duration: 0.2,
+                }, "<").to(".box:nth-child(3)", {
+                    opacity:"1",
                     display: "block",
                     duration: 0.5,
                 }, "<")

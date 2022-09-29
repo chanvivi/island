@@ -73,6 +73,7 @@
     width: auto;
     word-break: break-all;
     white-space: nowrap;
+    z-index: 15;
   }
   .tool_div .range .cell .lens {
     width: 14%;
