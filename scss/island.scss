@@ -68,6 +68,9 @@
                         padding-right: 1.5vw;
                         z-index: 20;
                     }
+                    .box:nth-child(2) {
+                        letter-spacing: .1vw;
+                    }
                     .box:nth-child(3) {
                         position: absolute;
                         overflow: hidden;
@@ -79,13 +82,14 @@
                         // 多個空格合併為一個，但文本不會換行到下一行
                         white-space: nowrap;
                         z-index: 15;
+                        letter-spacing: 1.5vw;
                     }
                 }
 
                 .lens {
                     width: 14%;
                     display: flex;
-                    // margin-left: 12vw;
+                    padding: 2vw;
                 }
             }
 

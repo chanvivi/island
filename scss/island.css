@@ -65,6 +65,9 @@
     padding-right: 1.5vw;
     z-index: 20;
   }
+  .tool_div .range .cell .cell_box .box:nth-child(2) {
+    letter-spacing: 0.1vw;
+  }
   .tool_div .range .cell .cell_box .box:nth-child(3) {
     position: absolute;
     overflow: hidden;
@@ -74,10 +77,12 @@
     word-break: break-all;
     white-space: nowrap;
     z-index: 15;
+    letter-spacing: 1.5vw;
   }
   .tool_div .range .cell .lens {
     width: 14%;
     display: flex;
+    padding: 2vw;
   }
   .tool_div .range .maps {
     background-color: #b00000;
