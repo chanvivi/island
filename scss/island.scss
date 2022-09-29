@@ -46,10 +46,14 @@
                 line-height: 1;
                 width: 100%;
                 z-index: 3;
+                overflow: hidden;
+                justify-content: space-around;
 
                 .cell_box {
                     display: flex;
-
+                    align-items: center;
+                    width: 100%;
+                    position: relative;
                     .box {
                         display: flex;
                         justify-content: center;
@@ -61,13 +65,25 @@
                     .box:nth-child(1) {
                         width: 6vw;
                         padding-right: 1.5vw;
+                        z-index: 20;
+                    }
+                    .box:nth-child(3) {
+                        position: absolute;
+                        overflow: hidden;
+                        line-height: 6vw !important;
+                        display: inline-block;
+                        width: auto;
+                        // 英文不會在字中間斷開，CJK 字元也不會在任意位置斷開
+                        word-break: break-all;
+                        // 多個空格合併為一個，但文本不會換行到下一行
+                        white-space: nowrap;
                     }
                 }
 
                 .lens {
                     width: 14%;
                     display: flex;
-                    margin-left: 12vw;
+                    // margin-left: 12vw;
                 }
             }
 
@@ -225,5 +241,4 @@
         color: #fff !important;
         text-decoration: none;
     }
-
 }

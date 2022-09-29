@@ -44,9 +44,14 @@
     line-height: 1;
     width: 100%;
     z-index: 3;
+    overflow: hidden;
+    justify-content: space-around;
   }
   .tool_div .range .cell .cell_box {
     display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
   }
   .tool_div .range .cell .cell_box .box {
     display: flex;
@@ -58,11 +63,20 @@
   .tool_div .range .cell .cell_box .box:nth-child(1) {
     width: 6vw;
     padding-right: 1.5vw;
+    z-index: 20;
+  }
+  .tool_div .range .cell .cell_box .box:nth-child(3) {
+    position: absolute;
+    overflow: hidden;
+    line-height: 6vw !important;
+    display: inline-block;
+    width: auto;
+    word-break: break-all;
+    white-space: nowrap;
   }
   .tool_div .range .cell .lens {
     width: 14%;
     display: flex;
-    margin-left: 12vw;
   }
   .tool_div .range .maps {
     background-color: #b00000;

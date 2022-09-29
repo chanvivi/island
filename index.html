@@ -31,8 +31,10 @@
             <a href="#reserve" id="reserves" class="cell">
                 <div class="cell_box">
                     <div class="box"><img src="calendar.png"></div>
-                    <div class="box" data-content="立即預約">立即預約</div>
+                    <div class="box">立即預約</div>
+                    <div class="box marquee" data-direction='right' data-duration='3500'>新光田特區起飛 看見繁華榮景</div>
                 </div>
+
                 <div class="lens"><img src="lens.png" alt=""></div>
             </a>
             <div class="maps">
@@ -597,6 +599,8 @@
     </script>
 
 
+
+
     <!-- col_1 -->
     <script>
         function AppleIsland() {
@@ -609,28 +613,32 @@
                 }
             })
             t1.fromTo(".cell", {
-                width: "45%",
-                height: "3vh",
-            }, {
-                width: "45%",
-                height: "3vh",
-                duration: 0.2,
-            }, "<").to(".lines", {
-                display: "none",
-                duration: 0.2,
-            }, "<").to(".call", {
-                display: "none",
-                duration: 0.2,
-            }, "<").to(".face", {
-                display: "none",
-                duration: 0.2,
-            }, "<").to(".life", {
-                display: "none",
-                duration: 0.2,
-            }, "<").to(".maps", {
-                display: "none",
-                duration: 0.2,
-            }, "<")
+                    width: "45%",
+                    height: "3vh",
+                }, {
+                    width: "45%",
+                    height: "3vh",
+                    duration: 0.2,
+                }, "<").to(".box:nth-child(3)"
+                , {
+                    display: "none",
+                    duration: 0.2,
+                }, "<").to(".lines", {
+                    display: "none",
+                    duration: 0.2,
+                }, "<").to(".call", {
+                    display: "none",
+                    duration: 0.2,
+                }, "<").to(".face", {
+                    display: "none",
+                    duration: 0.2,
+                }, "<").to(".life", {
+                    display: "none",
+                    duration: 0.2,
+                }, "<").to(".maps", {
+                    display: "none",
+                    duration: 0.2,
+                }, "<")
         }
         AppleIsland()
     </script>
@@ -658,9 +666,6 @@
                     display: "block",
                     x: "25vw",
                     duration: 0.5,
-                }, "<").to(".lens", {
-                    marginLeft: "3.5vw",
-                    duration: 0.5,
                 }, "<")
         }
         AppleIsland_1()
@@ -684,13 +689,19 @@
                     height: "3vh",
                     duration: 0.5,
                 }, "<")
+                .to(".box:nth-child(3)"
+                , {
+                    display: "none",
+                    duration: 0.5,
+                }, "<")
+                .to(".box:nth-child(2)"
+                , {
+                    display: "block",
+                    duration: 0.5,
+                }, "<")
                 .to(".lines", {
                     display: "block",
                     x: "25vw",
-                    duration: 0.5,
-                }, "<")
-                .to(".lens", {
-                    marginLeft: "3.5vw",
                     duration: 0.5,
                 }, "<")
         }
@@ -801,7 +812,15 @@
                 }, "<")
                 .to(".maps", {
                     display: "none",
-                    x:"0",
+                    x: "0",
+                    duration: 0.5,
+                }, "<").to(".box:nth-child(2)"
+                , {
+                    display: "none",
+                    duration: 0.5,
+                }, "<").to(".box:nth-child(3)"
+                , {
+                    display: "block",
                     duration: 0.5,
                 }, "<")
         }
@@ -810,6 +829,19 @@
 
     <script src="js/plugins/jquery-3.5.1.min.js"></script>
     <script src="js/plugins/gsap3/dist/gsap.min.js"></script>
+
+    <script type='text/javascript' src='//cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js'></script>
+
+
+    <!-- marquee -->
+    <script>
+        $('.marquee').marquee({
+            duration: 7000,
+            gap: 50,
+            direction: 'left',
+            duplicated: true,
+        });
+    </script>
 </body>
 
 </html>
