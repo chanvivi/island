@@ -2,6 +2,8 @@
     display: none;
 }
 img{
+    width: 100%;
+    height: 100%;
     display: block;
 }
 
@@ -56,6 +58,7 @@ img{
                     display: flex;
                     align-items: center;
                     width: 100%;
+                    height: 10vw;
                     position: relative;
                     overflow: hidden;
                     .box {
@@ -68,9 +71,14 @@ img{
 
                     .box:nth-child(1) {
                         width: 6vw;
+                        height: 6vw;
                         padding-right: 1.5vw;
                         z-index: 20;
                         background-color: black;
+                        position: relative;
+                        img{
+                            position: absolute;
+                        }
                     }
                     .box:nth-child(2) {
                         letter-spacing: .1vw;

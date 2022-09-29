@@ -30,11 +30,13 @@
         <div class="range move">
             <a href="#reserve" id="reserves" class="cell">
                 <div class="cell_box">
-                    <div class="box"><img src="calendar.png"></div>
+                    <div class="box">
+                        <img src="calendar.png" alt="">
+                        <img src="megaphone.png" alt="">
+                    </div>
                     <div class="box">立即預約</div>
                     <div class="box marquee">新光特區起飛，看見繁華。</div>
                 </div>
-
                 <div class="lens"><img src="lens.png" alt=""></div>
             </a>
             <div class="maps">
@@ -619,6 +621,9 @@
                 width: "45%",
                 height: "3vh",
                 duration: 0.2,
+            }, "<").to(".cell_box .box img:nth-child(2)", {
+                display: "none",
+                duration: 0.2,
             }, "<").to(".box:nth-child(3)", {
                 display: "none",
                 duration: 0.2,
@@ -688,13 +693,23 @@
                     height: "3vh",
                     duration: 0.5,
                 }, "<")
+                .to(".cell_box .box img:nth-child(1)", {
+                    opacity: "1",
+                    display: "block",
+                    duration: 0.5,
+                }, "<")
+                .to(".cell_box .box img:nth-child(2)", {
+                    opacity: "0",
+                    display: "none",
+                    duration: 0.5,
+                }, "<")
                 .to(".box:nth-child(2)", {
-                    opacity:"1",
+                    opacity: "1",
                     display: "block",
                     duration: 0.5,
                 }, "<")
                 .to(".box:nth-child(3)", {
-                    opacity:"0",
+                    opacity: "0",
                     display: "none",
                     duration: 0.5,
                 }, "<")
@@ -811,14 +826,24 @@
                 }, "<")
                 .to(".maps", {
                     display: "none",
-                    x: "0",
+                    x: "-25",
                     duration: 0.5,
-                }, "<").to(".box:nth-child(2)", {
-                    opacity:"0",
+                }, "<").to(".cell_box .box img:nth-child(2)", {
+                    opacity: "1",
+                    display: "block",
+                    duration: 0.2,
+                }, "<")
+                .to(".cell_box .box img:nth-child(1)", {
+                    opacity: "0",
+                    display: "none",
+                    duration: 0.2,
+                }, "<")
+                .to(".box:nth-child(2)", {
+                    opacity: "0",
                     display: "none",
                     duration: 0.2,
                 }, "<").to(".box:nth-child(3)", {
-                    opacity:"1",
+                    opacity: "1",
                     display: "block",
                     duration: 0.5,
                 }, "<")
@@ -835,10 +860,11 @@
     <!-- marquee -->
     <script>
         $('.marquee').marquee({
-            duration: 10000,
+            duration: 15000,
             gap: 50,
             // 播放時間
-            delayBeforeStart: 500,
+            delayBeforeStart: 50,
+            direction: 'left',
             direction: 'right',
             duplicated: true,
         });
